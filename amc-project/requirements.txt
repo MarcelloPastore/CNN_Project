@@ -1,0 +1,26 @@
+# Core numerico
+numpy>=1.26,<2.5
+scipy>=1.11
+
+# Deep learning (Keras 3 + backend JAX)
+keras>=3.0
+jax[cuda12]>=0.4.30; platform_system == "Linux"
+jax>=0.4.30; platform_system != "Linux"
+
+# Data handling
+pandas>=2.2
+pyarrow>=15.0
+
+# ML metrics / utility
+scikit-learn>=1.4
+
+# Plotting
+matplotlib>=3.8
+seaborn>=0.13
+
+# Notebook (opzionale ma utile)
+jupyter>=1.0
+ipykernel>=6.29
+
+# Progress/logging
+tqdm>=4.66
