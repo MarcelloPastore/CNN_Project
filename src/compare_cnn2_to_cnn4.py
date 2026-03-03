@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 # Config
 # -----------------------
 CNN2_CSV = "outputs/tables/accuracy_by_snr.csv"
-CNN4_CSV = "outputs/tables/cnn4_accuracy_by_snr.csv"
+CNN4_CSV = "outputs/tables/cnn4_v3_accuracy_by_snr.csv"
 
-OUT_CSV = "outputs/tables/compare_cnn2_cnn4_by_snr.csv"
-OUT_PNG = "outputs/figures/compare_cnn2_cnn4_by_snr.png"
+OUT_CSV = "outputs/tables/compare_cnn2_cnn4_v3_by_snr.csv"
+OUT_PNG = "outputs/figures/compare_cnn2_cnn4_v3_by_snr.png"
 
 # -----------------------
 # Load

@@ -2,12 +2,12 @@ import keras
 from keras import layers
 
 
-def build_cnn4(input_shape=(2, 128, 1), num_classes=11, dropout=0.5):
+def build_cnn4_v3(input_shape=(2, 128, 1), num_classes=11, dropout=0.45):
     """
-    CNN4 v2 per AMC:
-    - 4 blocchi convoluzionali
-    - BatchNorm + Dropout per stabilità
-    - Head densa semplice
+    CNN4 v3:
+    - backbone simile a v2
+    - head più leggera (Dense 128) per ridurre overfit
+    - BN + Dropout per stabilità
     """
     inp = keras.Input(shape=input_shape, name="iq_input")
 
@@ -35,10 +35,10 @@ def build_cnn4(input_shape=(2, 128, 1), num_classes=11, dropout=0.5):
     x = layers.BatchNormalization(name="bn4")(x)
     x = layers.Dropout(dropout, name="drop4")(x)
 
-    # Head
+    # Head (lighter)
     x = layers.Flatten(name="flatten")(x)
-    x = layers.Dense(256, activation="relu", name="dense1")(x)
+    x = layers.Dense(128, activation="relu", name="dense1")(x)
     x = layers.Dropout(dropout, name="drop_dense")(x)
     out = layers.Dense(num_classes, activation="softmax", name="classifier")(x)
 
-    return keras.Model(inp, out, name="cnn4_v2")
+    return keras.Model(inp, out, name="cnn4_v3")

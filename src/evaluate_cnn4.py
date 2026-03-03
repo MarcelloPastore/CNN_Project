@@ -13,9 +13,9 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 # Config
 # -----------------------
 DATA_PATH = "data/RML2016.pkl"
-MODEL_PATH = "models/cnn4_model.keras"
-FIG_OUT = "outputs/figures/cnn4_confusion_matrix_normalized.png"
-SNR_TABLE_OUT = "outputs/tables/cnn4_accuracy_by_snr.csv"
+MODEL_PATH = "models/cnn4_v3_model.keras"
+FIG_OUT = "outputs/figures/cnn4_v3_confusion_matrix_normalized.png"
+SNR_TABLE_OUT = "outputs/tables/cnn4_v3_accuracy_by_snr.csv"
 
 BATCH_SIZE = 64
 SEED = 42
