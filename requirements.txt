@@ -1,26 +1,22 @@
-# Core numerico
-numpy>=1.26,<2.5
-scipy>=1.11
+numpy>=2.0,<2.5
+matplotlib>=3.8,<3.11
+seaborn>=0.13,<0.14
+scikit-learn>=1.4,<1.8
 
-# Deep learning (Keras 3 + backend JAX)
-keras>=3.0
-jax[cuda12]>=0.4.30; platform_system == "Linux"
-jax>=0.4.30; platform_system != "Linux"
+# TensorFlow stack (GPU support via NVIDIA pip packages)
+tensorflow==2.20.0
 
-# Data handling
-pandas>=2.2
-pyarrow>=15.0
+# CUDA user-space libs required by TensorFlow on Linux
+nvidia-cuda-runtime-cu12
+nvidia-cudnn-cu12
+nvidia-cublas-cu12
+nvidia-cufft-cu12
+nvidia-curand-cu12
+nvidia-cusolver-cu12
+nvidia-cusparse-cu12
+nvidia-nccl-cu12
+nvidia-cuda-nvcc-cu12
 
-# ML metrics / utility
-scikit-learn>=1.4
-
-# Plotting
-matplotlib>=3.8
-seaborn>=0.13
-
-# Notebook (opzionale ma utile)
-jupyter>=1.0
-ipykernel>=6.29
-
-# Progress/logging
-tqdm>=4.66
+# Optional: for Keras 3 + JAX backend (cnn4_v3 in JAX mode)
+jax
+jaxlib
