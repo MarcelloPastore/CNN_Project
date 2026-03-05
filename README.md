@@ -1,8 +1,8 @@
-# CNN Project (RML2016.10b)
+# CNN Project (DATASET: RML2016.10b)
 
 Confronto tra tre reti per classificazione modulazioni:
-- **CNN2** (baseline paper-style)
-- **T23** (architettura da tabella paper)
+- **CNN2** (baseline)
+- **T23** (architettura da ottenuta come mostrato nel paper)
 - **CNN4_v3** (variante ottimizzata)
 
 ## Requisiti
@@ -10,6 +10,15 @@ Confronto tra tre reti per classificazione modulazioni:
 - Python 3.12
 - Virtual env `.venv312`
 - Dataset: `data/RML2016.10b.dat`
+- Installazione requirements tramite pip.
+
+
+## DETTAGLI
+Il progetto si basa sull'elaborazione di informazioni grezze come i dati I/Q per la classificazione
+di modulazioni.
+Il paper su cui si basa la ricerca è intitolato: **An Optimized Radio Modulation Classifier Using 
+Deep Neural Network**
+La tesi si basa sul miglioramento possibile, sia nei tempi che nei risultati ottenuti (con poco rumore), utilizzando JAX + Keras invece dell'uso di Tensorflow + Keras
 
 ## Training
 
@@ -58,7 +67,7 @@ Output in `outputs/figures/`:
 
 ## Note sperimentali
 
-- Confusion matrix generate **senza valori numerici nelle celle** (stile paper).
+- Confusion matrix generate.
 - Confronto finale include:
   - test accuracy
   - training time
