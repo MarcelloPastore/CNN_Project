@@ -1,0 +1,32 @@
+{
+  "model_name": "cnn_paper_t23",
+  "data_path": "data/RML2016.10b.dat",
+  "num_classes": 10,
+  "target_mods": [
+    "8PSK",
+    "AM-DSB",
+    "BPSK",
+    "CPFSK",
+    "GFSK",
+    "PAM4",
+    "QAM16",
+    "QAM64",
+    "QPSK",
+    "WBFM"
+  ],
+  "seed": 42,
+  "batch_size": 1024,
+  "epochs_configured": 45,
+  "epochs_ran": 45,
+  "patience_es": 10,
+  "patience_lr": 10,
+  "dropout": 0.5,
+  "best_val_accuracy": 0.5559083223342896,
+  "best_val_loss": 1.0650376081466675,
+  "final_test_accuracy": 0.5531033277511597,
+  "final_test_loss": 1.0696653127670288,
+  "train_time_sec": 1357.6812765598297,
+  "train_samples": 480000,
+  "val_samples": 120000,
+  "test_samples": 600000
+}

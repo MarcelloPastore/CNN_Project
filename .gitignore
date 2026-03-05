@@ -1,3 +1,4 @@
-data/RML2016.pkl
+data/RML2016.10a.pkl
+data/RML2016.10b.dat
 outputs/tables/predictions.parquet
 .venv

@@ -1,0 +1,21 @@
+{
+  "model_name": "cnn4_v3",
+  "batch_size": 1024,
+  "best_val_accuracy": 0.5681999921798706,
+  "final_test_accuracy": 0.5648599863052368,
+  "final_test_loss": 1.0791922807693481,
+  "epochs_ran": 45,
+  "train_time_sec": 931.1658265590668,
+  "target_mods": [
+    "8PSK",
+    "AM-DSB",
+    "BPSK",
+    "CPFSK",
+    "GFSK",
+    "PAM4",
+    "QAM16",
+    "QAM64",
+    "QPSK",
+    "WBFM"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "model_name": "cnn2",
+  "data_path": "data/RML2016.10b.dat",
+  "num_classes": 10,
+  "target_mods": [
+    "8PSK",
+    "AM-DSB",
+    "BPSK",
+    "CPFSK",
+    "GFSK",
+    "PAM4",
+    "QAM16",
+    "QAM64",
+    "QPSK",
+    "WBFM"
+  ],
+  "seed": 42,
+  "batch_size": 1024,
+  "epochs_configured": 45,
+  "epochs_ran": 43,
+  "best_val_accuracy": 0.5422916412353516,
+  "final_test_accuracy": 0.5399883389472961,
+  "final_test_loss": 1.0967549085617065,
+  "train_time_sec": 1937.7244453430176,
+  "sec_per_epoch_avg": 45.06335919402366,
+  "train_samples": 480000,
+  "val_samples": 120000,
+  "test_samples": 600000
+}
