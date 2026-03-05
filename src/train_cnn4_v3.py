@@ -7,7 +7,7 @@ import keras
 from collections import defaultdict
 from models.cnn4_v3 import build_cnn4_v3
 
-DATA_PATH = "data/RML2016.pkl"
+DATA_PATH = "data/RML2016.10b.dat"
 MODEL_OUT = "models/cnn4_v3_model.keras"
 
 SEED = 42
